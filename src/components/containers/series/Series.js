@@ -2,6 +2,7 @@ import { useState } from "react";
 import fetch from "cross-fetch";
 import SeriesList from "../../SeriesList/SeriesList";
 import Loader from "../../Loader/Loader";
+import Intro from '../../Intro/Intro'
 
 function Series() {
   const [series, setSeries] = useState([]);
@@ -21,6 +22,7 @@ function Series() {
 
   return (
     <div>
+      <Intro message="Here you can find all of your most loved series" />
       <div>
         <input value={seriesName} type="text" onChange={onSeriesInputChange} />
       </div>
