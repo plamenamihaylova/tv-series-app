@@ -1,10 +1,10 @@
-import React from 'react'; // react library itself
-import ReactDOM from 'react-dom/client'; // glue between the react elements and the DOM
-import './index.css';
-import App from './components/App/App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"; // react library itself
+import ReactDOM from "react-dom/client"; // glue between the react elements and the DOM
+import "./index.css";
+import App from "./components/App/App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
