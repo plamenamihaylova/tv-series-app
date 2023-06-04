@@ -1,13 +1,19 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import SingleSeriesInfo from "../../SingleSeriesInfo/SingleSeriesInfo";
 
-function SingleSeries(props) {
+function SingleSeries() {
   const params = useParams();
 
-  return (
-    <div>
-      <p>Single Series - the show id will be {params.id}</p>
-    </div>
-  );
+  const [show, setShow] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://api.tvmaze.com/shows/${params.id}?embed=episodes`)
+      .then((response) => response.json())
+      .then((json) => setShow(json));
+  });
+
+  return <SingleSeriesInfo show={show}/>
 }
 
 export default SingleSeries;
