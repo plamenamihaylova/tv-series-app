@@ -11,13 +11,13 @@ You can then select a specific series, and you'll be forwarded to a correspondin
 
 #### Home page
 
-<img height="400" src='home-page.png" title="8 puzzle logo" width="1000"/>
+<img height="600" src="home-page.png" title="8 puzzle logo" width="1000"/>
 
 ---
 
 #### Series page
 
-<img height="400" src="series-page.png" title="8 puzzle logo" width="1000"/>
+<img height="600" src="series-page.png" title="8 puzzle logo" width="1000"/>
 
 ---
 
