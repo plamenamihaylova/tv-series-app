@@ -1,9 +1,7 @@
-import loader from "../../assets/loader.gif";
-
 function Loader() {
   return (
-    <div>
-      <img style={{ width: 75 }} src={loader} alt="loader" />
+    <div className="spinner-border text-primary m-1" role="status">
+      <span className="visually-hidden">Loading...</span>
     </div>
   );
 }

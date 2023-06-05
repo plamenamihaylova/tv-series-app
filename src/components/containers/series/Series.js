@@ -2,7 +2,7 @@ import { useState } from "react";
 import fetch from "cross-fetch";
 import SeriesList from "../../SeriesList/SeriesList";
 import Loader from "../../Loader/Loader";
-import Intro from '../../Intro/Intro'
+import "./Series.css";
 
 function Series() {
   const [series, setSeries] = useState([]);
@@ -21,16 +21,19 @@ function Series() {
   };
 
   return (
-    <div>
-      <Intro message="Here you can find all of your most loved series" />
-      <div>
-        <input value={seriesName} type="text" onChange={onSeriesInputChange} />
+    <div className="series-search">
+      <div className="mb-3">
+        <input value={seriesName} type="text" onChange={onSeriesInputChange} className="form-control form-control-lg" placeholder="Series name"/>
       </div>
       {!isFetching && series.length === 0 && seriesName.trim() === "" && (
-        <p>Please, enter series name to the input.</p>
+        <div className="mt-4 m-2">
+          Please, enter series name to the input.
+        </div>
       )}
       {!isFetching && series.length === 0 && seriesName.trim() !== "" && (
-        <p>No TV series with this name have been found.</p>
+        <div className="mt-4 m-2">
+          No TV series with this name have been found.
+        </div>
       )}
       {isFetching && <Loader />}
       {!isFetching && <SeriesList list={series} />}
