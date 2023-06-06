@@ -19,10 +19,10 @@ function SingleSeriesInfo(props) {
               <h4 className="fs-1">{props.show.name}</h4>
             </div>
             <hr className="my-4 col-10 col-sm-8 col-lg-6" />
-            <p className="fs-3">Premiered - {props.show.premiered}</p>
-            <p className="fs-3">Rating - {props.show.rating.average}</p>
+            <p className="fs-3">✨Rating - {props.show.rating.average}</p>
+            <p className="fs-3">🎬Premiered - {props.show.premiered}</p>
             <p className="fs-3">
-              Episodes - {props.show._embedded.episodes.length}
+              🎞️Episodes - {props.show._embedded.episodes.length}
             </p>
           </div>
         </div>
