@@ -21,8 +21,7 @@ function SingleSeriesInfo(props) {
             <hr className="my-4 col-10 col-sm-8 col-lg-6" />
             <p className="fs-3">✨Rating - {props.show.rating.average}</p>
             <p className="fs-3">🎬Premiered - {props.show.premiered}</p>
-            <p className="fs-3">
-              🎞️Episodes - {props.show._embedded.episodes.length}
+            <p className="fs-3"> 🎞️Episodes - {props.show._embedded.episodes.length}
             </p>
           </div>
         </div>
