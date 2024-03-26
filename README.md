@@ -1,27 +1,40 @@
 ### TV Series Application 📺
-
----
-
-- Basic React App that retrieves data (TV Series related) from API and displays it to the user.
-
-- In this app you can search a tv series by key word and observe the result.
+🎦 In this app you can search TV series by a key word and observe the result.
 You can then select a specific series, and you'll be forwarded to a corresponding to the selected series.
 
 ---
 
-#### Home page
-
-<img height="600" src="home-page.png" title="8 puzzle logo" width="1000"/>
-
----
-
-#### Series page
-
-<img height="600" src="series-page.png" title="8 puzzle logo" width="1000"/>
+- Basic TV Series listing React App.
+- Retrieves data from API and displays it to the user.
 
 ---
 
-You can start the application by simply running `npm start` in the project's folder.
+#### 🔗 [Check the app out](https://plamenamihaylova.github.io/tv-series-app)
+
+---
+
+### Starting the project locally:
+In the project directory run:
+
+#### `npm start`
+
+This command will run the app in the development mode on [http://localhost:3000](http://localhost:3000).
+
+---
+
+### Build the project for GitHub pages deploy
+In the project directory run:
+
+#### `npm run pre-deploy`
+
+This command will create a build directory.
+
+---
+
+### Deploy on GitHub pages
+In the project directory run:
+
+#### `npm run deploy`
 
 ---
 
