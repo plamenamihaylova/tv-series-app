@@ -8,7 +8,7 @@ function SingleSeries() {
   const [show, setShow] = useState(null);
 
   useEffect(() => {
-    fetch(`http://api.tvmaze.com/shows/${params.id}?embed=episodes`)
+    fetch(`https://api.tvmaze.com/shows/${params.id}?embed=episodes`)
       .then((response) => response.json())
       .then((json) => setShow(json));
   });

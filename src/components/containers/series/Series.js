@@ -12,7 +12,7 @@ function Series() {
   const onSeriesInputChange = (e) => {
     setSeriesName(e.target.value);
     setIsFetching(true);
-    fetch(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${e.target.value}`)
       .then((response) => response.json())
       .then((json) => {
         setSeries(json);
